@@ -1,28 +1,30 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Aval.io</title>
+<%- include ('../partials/header.ejs') %>
 
-    <link rel="stylesheet" href="styles.css"/>
-</head>
-<body>
-    <header>
-        <h1 id="main-title">
-            Aval.<span class="blue-text">io</span>
-        </h1>
-    </header>
-
-    <form class="columns" action="/login" method="POST">
+<form class="columns main-form" action="/login" method="POST">
+    <div class="form-row rounded bordered">
+        <!-- <img src="img/" alt="" class=""> -->
         <input type="text" name="username" placeholder="Usuário" required>
+    </div>
+
+    <div class="form-row rounded bordered">
+        <!-- <img src="img/" alt="" class=""> -->
         <input type="password" name="password" placeholder="Senha" required>
-        <input type="submit" value="Entrar">
-    </form>
-    
-    <footer>
-        <span id="footer-text">&copy; João Vitor de Mello Gomes - 2022</span>
-    </footer>
-</body>
-</html>
+    </div>
+
+    <div class="form-row">
+        <input type="checkbox" name="remember">
+        <label>Continuar logado</label>
+        <a href="/recuperar" class="blue-text">Esqueceu a senha</a>
+    </div>
+
+    <div class="form-row">
+        <input type="submit" value="ENTRAR" class="main-button rounded">
+    </div>
+
+    <div class="form-row">
+        <span>Ainda não tem conta?</span>
+        <a href="/register" class="blue-text">Cadastre-se</a>
+    </div>
+</form>
+
+<%- include ('../partials/footer.ejs') %> 
