@@ -1,0 +1,26 @@
+TIPOS DE QUESTÕES
+1. Dissertativas	(String)
+	1.1. Simples
+	- A resposta é um texto livre
+	= Enunciado + textbox
+
+	1.2. Completar lacunas
+	- A resposta é um texto concatenado
+	= Enunciado + texto incompleto + opções
+		1.2.1. Arrastar
+		1.2.2. ComboBox
+		1.2.3. Livre
+
+2. Alternativas		(List)
+= Enunciado + opções
+	2.1. Simples
+	- A resposta é uma lista de 1 elemento
+
+	2.2. Múltipla escolha
+	- A resposta é uma lista de N elementos
+
+4. Relacionar 		(Dict)
+- A resposta é um dicionário {termo: significado}
+= Enunciado + termos + significados
+	4.1. Arrastar
+	4.2. ComboBox
